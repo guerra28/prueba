@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <title>Eco Agentes</title>
+   
+
+  </head>
+  <body class="text-sm" style="background-color: rgb(119 61 189 / 7%)">
+    <div
+      class="container mx-auto px-5 pb-2"
+      style="background-color: rgb(119 61 189 / 7%)"
+    >
+      <div class="flex justify-between py-2">
+        <div>
+          <span id="usuario"></span>
+        </div>
+        <div class="columns-2">
+          <div>
+            <span id="btn-settings"><img width="24" src="./assets/img/settings.png" /></span>
+          </div>
+          <div>
+            <span id="btn-refresh"><img width="24" src="./assets/img/refresh.png" /></span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-rows-1 pt-1 pb-2">
+        <div class="grid grid-cols-3 items-center">
+          <div>Sub Servicio:</div>
+          <div class="col-span-2 w-full">
+            <select
+              class="w-full block py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            >
+              <option value="001">001</option>
+              <option value="002">002</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container mx-4"> -->
+      <div id="list-indicadores" class="grid grid-rows-5 pt-2 mx-2">
+        <div class="grid grid-cols-4 pb-2">
+          <div class="col-span-2">Nombre</div>
+          <div class="text-center">Valor</div>
+          <div class="text-center">Objetivo</div>
+        </div>
+        <div class="grid grid-cols-4 text-green-800 items-center">
+          <div id="nombre_kpi" class="col-span-2">KPI 1</div>
+          <div id="nota" class="text-center">2.3</div>
+          <div id="objetivo" class="text-center">4.5</div>
+        </div>
+
+        <div class="grid grid-cols-4 text-red-700 items-center">
+          <div class="col-span-2">KPI 2</div>
+          <div class="text-center">56</div>
+          <div class="text-center">45.5</div>
+        </div>
+
+        <div class="grid grid-cols-4 text-amber-400 items-center">
+          <div class="col-span-2">KPI 3</div>
+          <div class="text-center">6</div>
+          <div class="text-center">3</div>
+        </div>
+
+        <div class="grid grid-cols-4 text-green-800 items-center">
+          <div class="col-span-2">KPI 4</div>
+          <div class="text-center">0</div>
+          <div class="text-center">1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./render.js"></script> -->
+
+    
+    <script src="./renderer/main-window/front.js"></script>
+  </body>
+</html>
